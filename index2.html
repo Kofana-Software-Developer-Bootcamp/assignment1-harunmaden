@@ -13,15 +13,47 @@
 <body>
 
     <form id="userForm">
-        <h1>Css deneme</h1>
-        <p>Adınız</p>
+        <h1>Yazılım Kursu Başvuru Formu</h1>
+        <p>Adınız:</p>
         <input type="text" id="isim">
-        <p>Soyadınız</p>
+        <p>Soyadınız:</p>
         <input type="text" id="soyisim">
-        <p>Telefon Numaranız</p>
+        <p>Telefon Numaranız:</p>
         <input type="number" id="numara">
-        <p>Adınıdddz</p>
-        <input type="text">
+        <p>Mail Adresiniz:</p>
+        <input type="email" id="email">
+        <br>
+        <p>Katılmak istediğiniz kurs:</p>
+        <select name="kurs" id="kurs">
+            <option value="Java">Java ile Backend</option>
+            <option value="Frontend">Frontend Web</option>
+            <option value=".Net">.Net Core/option>
+            <option value="Go">Go Web</option>
+            <option value="Veri">Veri Bilimi</option>
+            <option value="Unity">Unity Learn</option>
+            <option value="Mobile">Mobile App</option>
+          </select>
+          <p>Hangi  grup sizin için uygundur? :</p>
+
+<div>
+  <input type="checkbox" id="haftaSonuSabah" name="haftaSonuSabah">
+  <label for="haftaSonuSabah">Hafta Sonu Sabah 09:00 - 12:00</label>
+</div>
+
+<div>
+  <input type="checkbox" id="haftaSonuOglen" name="haftaSonuOglen">
+  <label for="haftaSonuOglen">Hafta Sonu Öğlen 13:00 - 16:00</label>
+</div>
+
+<div>
+    <input type="checkbox" id="haftaIciSabah" name="haftaIciSabah">
+    <label for="haftaIciSabah">Hafta İçi Sabah 09:00 - 12:00</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="haftaIciAksam" name="haftaIciAksam">
+    <label for="haftaIciAksam">Hafta İçi Akşam 19:00 - 22:00</label>
+  </div>
         <br>
         <br>
         <button type="submit">Gönder</button>

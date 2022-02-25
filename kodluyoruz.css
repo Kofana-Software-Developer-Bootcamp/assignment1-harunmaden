@@ -17,3 +17,10 @@ form {
 button{
     background-color: darkgray;
 }
+
+select{
+    background-color: rgb(255, 255, 255);
+    width: 180px;
+    height: 25px;
+    
+}
