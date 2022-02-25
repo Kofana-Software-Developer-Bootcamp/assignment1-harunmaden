@@ -21,12 +21,10 @@ function formSubmit(event){
 
 
     let items = [adInputDOM.value, soyadInputDom.value, numaraInputDom.value, optionDOM.value, 
-        
+
         haftaSonuSabahDOM.name,haftaSonuSabahCheck, haftaSonuOglenDOM.name, haftaSonuOglenCheck,
         haftaIciSabahDOM.name, haftaIciSabahCheck, haftaIciAksamDOM.name, haftaIciAksamCheck]
-
-
-
-console.log(items)
-//alert('Bilgileriniz kaydedildi en kısa süre içerisinde size ulaşılacaktır.')
+        
+        console.log(items)
+        alert('Bilgileriniz kaydedildi en kısa süre içerisinde size ulaşılacaktır.')
 }

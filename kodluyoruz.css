@@ -15,7 +15,10 @@ form {
     padding: 70px;
 }
 button{
-    background-color: darkgray;
+    background-color: blue;
+    color: white;
+    width: 130px;
+    height: 25px;
 }
 
 select{
