@@ -9,7 +9,7 @@ let haftaSonuSabahDOM = document.querySelector('#haftaSonuSabah')
 let haftaSonuOglenDOM = document.querySelector('#haftaSonuOglen')
 let haftaIciSabahDOM = document.querySelector('#haftaIciSabah')
 let haftaIciAksamDOM = document.querySelector('#haftaIciAksam')
-
+let kayit = [];
 function checkForm() {
     alert("Form temizlenecek");
     document.querySelector("#userForm").reset();
@@ -29,12 +29,23 @@ function formSubmit(event) {
 
 
 
-        let items = [adInputDOM.value, soyadInputDom.value, numaraInputDom.value, emailDOM.value, optionDOM.value,
+        let items = [adInputDOM.value, soyadInputDom.value, numaraInputDom.value, emailDOM.value, optionDOM.value, haftaSonuSabahCheck, haftaSonuOglenCheck,
+            haftaIciSabahCheck, haftaIciAksamCheck]
 
-        haftaSonuSabahDOM.name, haftaSonuSabahCheck, haftaSonuOglenDOM.name, haftaSonuOglenCheck,
-        haftaIciSabahDOM.name, haftaIciSabahCheck, haftaIciAksamDOM.name, haftaIciAksamCheck]
 
-        console.log(items)
         alert('Bilgileriniz kaydedildi en kısa süre içerisinde size ulaşılacaktır.')
+        let liste = {
+            adi: items[0],
+            soyadi: items[1],
+            numarasi: items[2],
+            maili: items[3],
+            kursu: items[4],
+            haftaSonuSabah: items[5],
+            HaftaSonuOglen: items[6],
+            HaftaIciSabah: items[7],
+            HaftaIciAksam: items[8],
+        }
+        kayit.push(liste);
+        console.table(kayit);
     }
 }
